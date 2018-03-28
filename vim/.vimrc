@@ -189,7 +189,9 @@ map <F6> :!cscope -bR<CR>:cs reset<CR><CR>
 " Autocmds {{{
 "Quickfix window
 augroup vimrc
+    autocmd!
     autocmd QuickFixCmdPost * botright copen 8
+    autocmd FileType gitcommit setlocal colorcolumn=50,72 | setlocal spell
 augroup END
 
 "Colors
