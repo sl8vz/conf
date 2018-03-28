@@ -159,8 +159,8 @@ nmap <Leader>w :w<CR>
 nmap <Leader>z :bd<CR>
 nmap <Leader>q <C-w>z
 
-nmap <S-j> <C-e>
-nmap <S-k> <C-y>
+nmap <S-j> 4<C-e>
+nmap <S-k> 4<C-y>
 
 nmap <F1> : call QuickfixToggle()<CR>
 
