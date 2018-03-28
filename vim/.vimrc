@@ -117,10 +117,7 @@ set csto=1
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 "Supertab
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 let g:SuperTabClosePreviewOnPopupClose = 1
-"let g:SuperTabMappingForward = "<C-space>"
-"let g:SuperTabMappingBackward = "<s-C-space>"
 " }}}
 
 " Functions {{{
