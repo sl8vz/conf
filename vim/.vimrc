@@ -118,6 +118,8 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 "Supertab
 let g:SuperTabClosePreviewOnPopupClose = 1
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = "<c-p>"
 " }}}
 
 " Functions {{{
