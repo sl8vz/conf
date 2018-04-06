@@ -166,12 +166,15 @@ nmap <Leader>c <C-w>c
 
 nmap <Leader>w :w<CR>
 nmap <Leader>z :bd<CR>
-nmap <Leader>q <C-w>z
 
 nmap <S-j> 4<C-e>
 nmap <S-k> 4<C-y>
 
+"QuickFix toggle
 nmap <F1> : call QuickfixToggle()<CR>
+
+"Preview close
+nmap <F2> <C-w>z
 
 "Vugitive
 nmap <F7> :Gblame<CR>
