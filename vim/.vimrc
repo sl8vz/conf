@@ -206,7 +206,9 @@ augroup vimrc
     autocmd FileType gitcommit setlocal colorcolumn=50,72 | setlocal spell
     autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif " Notification after file change
 augroup END
-"Colors
+" }}}
+
+"Colors {{{
 set background=dark
 colorscheme gruvbox
 " }}}
