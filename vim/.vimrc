@@ -71,6 +71,9 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ervandew/supertab'
 Plugin 'neomake/neomake'
+Plugin 'sirver/ultisnips'
+Plugin 'honza/vim-snippets'
+
 "Colorschemes
 Plugin 'tomasr/molokai'
 Plugin 'w0ng/vim-hybrid'
@@ -120,6 +123,10 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-
 let g:SuperTabClosePreviewOnPopupClose = 1
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-p>"
+
+"Ultisnips
+let g:UltiSnipsUsePythonVersion = 3
+let g:UltiSnipsListSnippets = "<F2>"
 " }}}
 
 " Functions {{{
