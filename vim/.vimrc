@@ -131,7 +131,7 @@ let g:UltiSnipsListSnippets = "<F2>"
 
 " Functions {{{
 function! MyGrep(arg)
-     execute "silent grep! -I -r --exclude=tags --exclude=.tags --exclude=cscope.out --exclude=*.log*" a:arg "."
+     cexpr system("rg --vimgrep -g '!tags' " . expand(a:arg))
      execute 'redraw!'
 endfunction
 
