@@ -14,7 +14,7 @@ set wildmenu    "menu autocomplete
 set showmatch
 
 set incsearch   "search as characters are entered
-set hlsearch    "highlight matches
+"set hlsearch    "highlight matches
 
 set mouse=a
 
