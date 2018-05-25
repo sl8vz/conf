@@ -181,6 +181,9 @@ nmap <F1> : call QuickfixToggle()<CR>
 "Preview close
 nmap <F2> <C-w>z
 
+"Registers
+nmap <F4> :reg<CR>
+
 "Vugitive
 nmap <F7> :Gblame<CR>
 
