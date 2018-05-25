@@ -204,6 +204,11 @@ inoremap jj <esc>
 
 map <F5> :!ctags .<CR><CR>
 map <F6> :!cscope -bR<CR>:cs reset<CR><CR>
+
+nmap <Left> <<
+nmap <Right> >>
+nmap <Up> [e
+nmap <Down> ]e
 " }}}
 
 " Autocmds {{{
