@@ -73,6 +73,7 @@ Plugin 'ervandew/supertab'
 Plugin 'neomake/neomake'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'qpkorr/vim-bufkill'
 
 "Colorschemes
 Plugin 'tomasr/molokai'
@@ -127,6 +128,10 @@ let g:SuperTabContextDefaultCompletionType = "<c-p>"
 "Ultisnips
 let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsListSnippets = "<F2>"
+
+"Bufkill
+let g:BufKillCreateMappings = 0
+
 " }}}
 
 " Functions {{{
@@ -165,7 +170,7 @@ nmap <Leader>x <C-W>}
 nmap <Leader>c <C-w>c
 
 nmap <Leader>w :w<CR>
-nmap <Leader>z :bd<CR>
+nmap <Leader>z :BD<CR>
 
 nmap <S-j> 4<C-e>
 nmap <S-k> 4<C-y>
