@@ -72,7 +72,10 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'ervandew/supertab'
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'deoplete-plugins/deoplete-tag'
+Plugin 'roxma/nvim-yarp'
+Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'neomake/neomake'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
@@ -123,10 +126,8 @@ set nocscopetag
 set csto=1
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
-"Supertab
-let g:SuperTabClosePreviewOnPopupClose = 1
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabContextDefaultCompletionType = "<c-p>"
+"Deoplete
+let g:deoplete#enable_at_startup = 1
 
 "Ultisnips
 let g:UltiSnipsUsePythonVersion = 3
@@ -212,6 +213,10 @@ nmap <Left> <<
 nmap <Right> >>
 nmap <Up> [e
 nmap <Down> ]e
+
+"Deoplete navigate pop-up
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 " }}}
 
 " Autocmds {{{
