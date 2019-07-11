@@ -142,6 +142,11 @@ function! MyGrep(arg)
      execute 'redraw!'
 endfunction
 
+" The same but only on word boundary
+function! MyGrepW(arg)
+     cexpr system("rg -w --vimgrep -g '!tags' " . expand(a:arg))
+     execute 'redraw!'
+endfunction
 let g:quickfix_is_open = 0
 
 function! QuickfixToggle()
@@ -200,6 +205,7 @@ nmap <Leader>t :Tags<CR>
 nmap <Leader>b :Buffers<CR>
 
 nmap <Leader>g : call MyGrep('<cword>')<CR>
+nmap <Leader>h : call MyGrepW('<cword>')<CR>
 nmap <Leader>G : call MyGrep(input("grep: "))<CR>
 
 inoremap jj <esc>
