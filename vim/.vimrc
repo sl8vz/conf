@@ -78,7 +78,6 @@ Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'qpkorr/vim-bufkill'
-
 "Colorschemes
 Plugin 'tomasr/molokai'
 Plugin 'w0ng/vim-hybrid'

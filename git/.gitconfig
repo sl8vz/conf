@@ -1,0 +1,30 @@
+[user]
+	email =
+	name = Seb Laveze
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	ls = log --stat
+	co = checkout
+	ci = commit -s
+	cia = commit --amend
+	autosquash = rebase -i HEAD~12 --autosquash
+	rb = rebase
+	rbc = rebase --continue
+	rba = rebase --abort
+	st = status
+	cp = cherry-pick
+[color]
+	ui = auto
+[web]
+	browser = chromium
+[diff "zip"]
+	textconv = unzip -c -a
+[gui]
+	commitmsgwidth = 72
+[core]
+	excludesfile = /home/seb/.gitignore_global
+	editor = vim
+[merge]
+	renameLimit = 40000
+[clangFormat]
+	binary = /usr/bin/clang-format-9
