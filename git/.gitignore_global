@@ -1,0 +1,5 @@
+# Local generated files
+cscope.out
+tags
+build/
+.vimrc
