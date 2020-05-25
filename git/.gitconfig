@@ -4,6 +4,7 @@
 [alias]
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	ls = log --stat
+	l = log --oneline
 	co = checkout
 	ci = commit -s
 	cia = commit --amend
