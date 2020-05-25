@@ -47,45 +47,39 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " Plugins {{{
 runtime macros/matchit.vim
 
-"
-" Vundle
-"
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'simplyzhao/cscope_maps.vim'
-Plugin 'justinmk/vim-syntax-extra'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-Plugin 'myusuf3/numbers.vim'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'Shougo/deoplete.nvim'
-Plugin 'deoplete-plugins/deoplete-tag'
-Plugin 'roxma/nvim-yarp'
-Plugin 'roxma/vim-hug-neovim-rpc'
-Plugin 'sirver/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'qpkorr/vim-bufkill'
+Plug 'VundleVim/Vundle.vim'
+Plug 'majutsushi/tagbar'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'simplyzhao/cscope_maps.vim'
+Plug 'justinmk/vim-syntax-extra'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'myusuf3/numbers.vim'
+Plug 'tpope/vim-unimpaired'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'Shougo/deoplete.nvim'
+Plug 'deoplete-plugins/deoplete-tag'
+Plug 'tbodt/deoplete-tabnine'
+Plug 'sirver/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'qpkorr/vim-bufkill'
 "Colorschemes
-Plugin 'tomasr/molokai'
-Plugin 'w0ng/vim-hybrid'
-Plugin 'morhetz/gruvbox'
+Plug 'tomasr/molokai'
+Plug 'w0ng/vim-hybrid'
+Plug 'morhetz/gruvbox'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+" Initialize plugin system
+call plug#end()
 " }}}
 
 " Plugins conf  {{{
