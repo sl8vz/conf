@@ -24,7 +24,7 @@ set scrolloff=5
 
 set termguicolors "true colors
 
-set colorcolumn=80
+set colorcolumn=120
 
 set relativenumber
 set backspace=indent,eol,start
