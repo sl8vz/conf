@@ -14,7 +14,7 @@ set wildmenu    "menu autocomplete
 set showmatch
 
 set incsearch   "search as characters are entered
-"set hlsearch    "highlight matches
+set nohlsearch   "highlight matches
 set ignorecase   "only for /
 set smartcase    "do not ignore case if uppercase in /
 
