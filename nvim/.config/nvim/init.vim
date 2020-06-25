@@ -122,6 +122,13 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 "Deoplete
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#tag#cache_limit_size = 50000000
+set completeopt+=noselect
+call deoplete#custom#option('omni_patterns', {
+\ 'c': '[^. *\t]\%(\.\|->\)\w*',
+\ 'cpp': ['[^. *\t]\%(\.\|->\)\w*', '[a-zA-Z_]\w*::'],
+\})
+
 " echodoc
 set cmdheight=2
 let g:echodoc_enable_at_startup = 1
