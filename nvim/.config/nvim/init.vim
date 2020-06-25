@@ -56,7 +56,6 @@ runtime macros/matchit.vim
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin()
 
-Plug 'VundleVim/Vundle.vim'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
