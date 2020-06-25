@@ -125,7 +125,7 @@ let g:deoplete#enable_at_startup = 1
 
 "Ultisnips
 let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsListSnippets = "<F2>"
+let g:UltiSnipsListSnippets = "<F3>"
 
 "Bufkill
 let g:BufKillCreateMappings = 0
