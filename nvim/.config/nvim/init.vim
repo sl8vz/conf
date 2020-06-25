@@ -122,6 +122,9 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 "Deoplete
 let g:deoplete#enable_at_startup = 1
+" echodoc
+set cmdheight=2
+let g:echodoc_enable_at_startup = 1
 
 "Ultisnips
 let g:UltiSnipsUsePythonVersion = 3
