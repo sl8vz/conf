@@ -29,6 +29,8 @@ set colorcolumn=120
 set relativenumber
 set backspace=indent,eol,start
 
+set clipboard+=unnamed
+set clipboard+=unnamedplus
 set undofile
 
 "More natural splits
