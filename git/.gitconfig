@@ -4,7 +4,8 @@
 [alias]
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	ls = log --stat
-	l = log --oneline
+	ll = log --pretty=format:\"%C(Yellow)%h %<(10,trunc)%C(Green)%cr %<(10,trunc)%C(Cyan)%an %C(reset)%s %C(auto)%d\"
+	l = log --pretty=format:\"%C(Yellow)%h %<(10,trunc)%C(Green)%cr %<(10,trunc)%C(Cyan)%an %C(reset)%s %C(auto)%d\" -20
 	co = checkout
 	ci = commit -s
 	cia = commit --amend
