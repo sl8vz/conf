@@ -197,8 +197,8 @@ nmap <F2> <C-w>z
 "Registers
 nmap <F4> :reg<CR>
 
-"Vugitive
-nmap <F7> :Gblame<CR>
+"Vugitive blame
+nmap <expr> <F7> &filetype ==# 'fugitiveblame' ? ":quit\r" : ":Gblame\r"
 
 "TagBar
 nmap <F8> :TagbarToggle<CR>
