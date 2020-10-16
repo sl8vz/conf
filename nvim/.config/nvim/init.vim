@@ -39,8 +39,9 @@ set splitright
 
 set foldenable          " enable folding
 
+filetype indent plugin on
+
 "omni-completion
-filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 set completeopt+=longest,menuone
 
