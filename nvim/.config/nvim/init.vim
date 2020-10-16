@@ -216,7 +216,7 @@ nmap <Leader>G : call MyGrep(input("grep: "))<CR>
 
 inoremap jj <esc>
 
-map <F5> :!ctags .<CR><CR>
+map <F5> :!ctags-universal .<CR><CR>
 map <F6> :!cscope -bR<CR>:cs reset<CR><CR>
 
 nmap <Left> <<
