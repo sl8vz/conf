@@ -65,6 +65,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'steelsojka/completion-buffers'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
+Plug 'nvim-lua/diagnostic-nvim'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'qpkorr/vim-bufkill'
@@ -132,6 +133,10 @@ let g:completion_auto_change_source = 1
 autocmd BufEnter * lua require'completion'.on_attach()
 let g:completion_enable_snippet = 'UltiSnips'
 
+" Diagnostics
+autocmd CursorHold * lua vim.lsp.util.show_line_diagnostics()
+let g:diagnostic_insert_delay = 1
+let g:diagnostic_enable_virtual_text = 0
 " }}}
 
 " Functions {{{
