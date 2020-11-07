@@ -32,12 +32,11 @@ set splitright
 
 filetype indent plugin on
 
-"omni-completion
-set omnifunc=syntaxcomplete#Complete
-set completeopt+=longest,menuone
+" Set completeopt to have a better completion experience
+set completeopt=menuone,noinsert,noselect
 
-" Enter behaves as C-y
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" Avoid showing message extra message when using completion
+set shortmess+=c
 " }}}
 
 " Plugins {{{
@@ -63,7 +62,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'myusuf3/numbers.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'steelsojka/completion-buffers'
 Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lua/completion-nvim'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'qpkorr/vim-bufkill'
@@ -101,10 +102,10 @@ set updatetime=250
 "NERDtress
 let g:NERDTreeWinPos = "right"
 
+"Tagbar
 let g:tagbar_left = 1
 let g:tagbar_sort = 0
 autocmd FileType tagbar setlocal nocursorline nocursorcolumn
-
 
 "Cscope
 set nocscopetag
@@ -123,6 +124,13 @@ lua require("lsp_cfg")
 
 "Tree sitter
 lua require("ts_cfg")
+
+"Nvim completion
+let g:completion_auto_change_source = 1
+
+" Use completion-nvim in every buffer
+autocmd BufEnter * lua require'completion'.on_attach()
+let g:completion_enable_snippet = 'UltiSnips'
 
 " }}}
 
