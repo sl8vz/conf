@@ -1,19 +1,14 @@
 " Configuration {{{
 set nocompatible
-syntax enable    "syntax
 set exrc         "allows to setup a local vimrc 
 
 set tabstop=8    "tab spaces
-set autoindent
-set cindent      "C-aware indentation
 
-set number       "line number
 set cursorline   "highlight current line
 
 set wildmenu    "menu autocomplete
 set showmatch
 
-set incsearch   "search as characters are entered
 set nohlsearch   "highlight matches
 set ignorecase   "only for /
 set smartcase    "do not ignore case if uppercase in /
@@ -34,8 +29,6 @@ set undofile
 "More natural splits
 set splitbelow
 set splitright
-
-set foldenable          " enable folding
 
 filetype indent plugin on
 
