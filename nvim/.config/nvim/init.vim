@@ -63,9 +63,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'myusuf3/numbers.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'Shougo/deoplete.nvim'
-Plug 'deoplete-plugins/deoplete-tag'
-Plug 'Shougo/echodoc.vim'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'qpkorr/vim-bufkill'
@@ -112,12 +109,6 @@ autocmd FileType tagbar setlocal nocursorline nocursorcolumn
 set nocscopetag
 set csto=1
 set cscopequickfix=s-,c-,d-,i-,t-,e-
-
-"Deoplete
-let g:deoplete#enable_at_startup = 1
-" echodoc
-set cmdheight=2
-let g:echodoc_enable_at_startup = 1
 
 "Ultisnips
 let g:UltiSnipsUsePythonVersion = 3
@@ -210,7 +201,7 @@ nmap <Right> >>
 nmap <Up> [e
 nmap <Down> ]e
 
-"Deoplete navigate pop-up
+" navigate pop-up
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 " }}}
