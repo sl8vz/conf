@@ -210,7 +210,8 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 "Quickfix window
 augroup vimrc
     autocmd!
-    autocmd QuickFixCmdPost * botright copen 8
+    autocmd FileType qf wincmd J
+    autocmd QuickFixCmdPost * copen 8
     autocmd FileType gitcommit setlocal colorcolumn=50,72 | setlocal spell
     autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif " Notification after file change
 augroup END
