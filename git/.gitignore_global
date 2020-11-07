@@ -3,3 +3,4 @@ cscope.out
 tags
 build/
 .nvimrc
+compile_commands.json
