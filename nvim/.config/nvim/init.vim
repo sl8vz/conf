@@ -57,7 +57,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'simplyzhao/cscope_maps.vim'
 Plug 'vitalk/vim-shebang'
-Plug 'justinmk/vim-syntax-extra'
+Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'myusuf3/numbers.vim'
@@ -116,6 +116,9 @@ let g:UltiSnipsListSnippets = "<F3>"
 
 "Bufkill
 let g:BufKillCreateMappings = 0
+
+"Tree sitter
+lua require("ts_cfg")
 
 " }}}
 
