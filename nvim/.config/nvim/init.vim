@@ -63,6 +63,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'myusuf3/numbers.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'neovim/nvim-lspconfig'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'qpkorr/vim-bufkill'
@@ -116,6 +117,9 @@ let g:UltiSnipsListSnippets = "<F3>"
 
 "Bufkill
 let g:BufKillCreateMappings = 0
+
+"Lsp
+lua require("lsp_cfg")
 
 "Tree sitter
 lua require("ts_cfg")
