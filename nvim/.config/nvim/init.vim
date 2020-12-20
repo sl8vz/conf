@@ -71,6 +71,7 @@ Plug 'nvim-lua/diagnostic-nvim'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'qpkorr/vim-bufkill'
+Plug 'npxbr/glow.nvim'
 "Colorschemes
 Plug 'tomasr/molokai'
 Plug 'w0ng/vim-hybrid'
