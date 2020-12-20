@@ -13,6 +13,7 @@
 	rb = rebase
 	rbc = rebase --continue
 	rba = rebase --abort
+	rhh = reset HEAD --hard
 	st = status
 	cp = cherry-pick
 [color]
