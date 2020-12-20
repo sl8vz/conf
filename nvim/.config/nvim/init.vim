@@ -131,12 +131,17 @@ let g:completion_auto_change_source = 1
 
 " Use completion-nvim in every buffer
 autocmd BufEnter * lua require'completion'.on_attach()
+"let g:completion_sorting = "length"
 let g:completion_enable_snippet = 'UltiSnips'
-
-" Diagnostics
-autocmd CursorHold * lua vim.lsp.util.show_line_diagnostics()
-let g:diagnostic_insert_delay = 1
-let g:diagnostic_enable_virtual_text = 0
+let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy', 'all']
+let g:completion_trigger_keyword_length = 2
+let g:completion_trigger_on_delete = 1
+let g:completion_enable_auto_paren = 1
+"let g:completion_chain_complete_list = [
+"    \{'complete_items': ['lsp', 'snippet', 'path']},
+"    \{'mode': '<c-p>'},
+"    \{'mode': '<c-n>'}
+"\]
 " }}}
 
 " Functions {{{
@@ -224,6 +229,9 @@ nmap <Down> ]e
 " navigate pop-up
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+
+imap  <c-s> <Plug>(completion_next_source)
+imap  <c-d> <Plug>(completion_prev_source)
 
 nnoremap <leader>hd :SignifyHunkDiff<cr>
 nnoremap <leader>hu :SignifyHunkUndo<cr>
