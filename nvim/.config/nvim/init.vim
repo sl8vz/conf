@@ -57,7 +57,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
-Plug 'simplyzhao/cscope_maps.vim'
 Plug 'vitalk/vim-shebang'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'junegunn/fzf'
@@ -107,11 +106,6 @@ let g:NERDTreeWinPos = "right"
 let g:tagbar_left = 1
 let g:tagbar_sort = 0
 autocmd FileType tagbar setlocal nocursorline nocursorcolumn
-
-"Cscope
-set nocscopetag
-set csto=1
-set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 "Ultisnips
 let g:UltiSnipsUsePythonVersion = 3
@@ -221,7 +215,6 @@ nmap <Leader>h : call MyGrepW('<cword>')<CR>
 inoremap jj <esc>
 
 map <F5> :!ctags-universal .<CR><CR>
-map <F6> :!cscope -bR<CR>:cs reset<CR><CR>
 
 nmap <Left> <<
 nmap <Right> >>
