@@ -77,7 +77,8 @@ Plug 'npxbr/glow.nvim'
 "Colorschemes
 Plug 'tomasr/molokai'
 Plug 'w0ng/vim-hybrid'
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
+Plug 'bluz71/vim-nightfly-guicolors'
 
 " Initialize plugin system
 call plug#end()
