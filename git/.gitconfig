@@ -29,5 +29,3 @@
 	editor = vim
 [merge]
 	renameLimit = 40000
-[clangFormat]
-	binary = /usr/bin/clang-format-9
