@@ -55,7 +55,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'simplyzhao/cscope_maps.vim'
 Plug 'vitalk/vim-shebang'
@@ -99,9 +99,6 @@ let g:airline#extensions#default#section_truncate_width = {
       \ 'error': 80,
       \ }
 let g:airline#extensions#tagbar#enabled = 0
-
-"gitgutter
-set updatetime=250
 
 "NERDtress
 let g:NERDTreeWinPos = "right"
@@ -227,6 +224,9 @@ nmap <Down> ]e
 " navigate pop-up
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+
+nnoremap <leader>hd :SignifyHunkDiff<cr>
+nnoremap <leader>hu :SignifyHunkUndo<cr>
 " }}}
 
 " Autocmds {{{
