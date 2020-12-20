@@ -12,7 +12,7 @@ set showmatch
 set nohlsearch   "highlight matches
 set ignorecase   "only for /
 set smartcase    "do not ignore case if uppercase in /
-
+set inccommand=split
 set mouse=a
 
 set scrolloff=5
@@ -31,12 +31,15 @@ set splitbelow
 set splitright
 
 filetype indent plugin on
+set smartindent
 
 " Set completeopt to have a better completion experience
 set completeopt=menuone,noinsert,noselect
 
 " Avoid showing message extra message when using completion
 set shortmess+=c
+
+set signcolumn=auto:2
 " }}}
 
 " Plugins {{{
