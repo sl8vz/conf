@@ -208,13 +208,15 @@ nmap <F8> :TagbarToggle<CR>
 map <F9> :NERDTreeToggle<CR>
 
 "FZF
-nmap <Leader>f :Files<CR>
+nmap <Leader>F :Files<CR>
+nmap <Leader>f :GFiles<CR>
 nmap <Leader>t :Tags<CR>
 nmap <Leader>b :Buffers<CR>
+nmap <Leader>l :Commits<CR>
+nmap <Leader>G :Rg<CR>
 
 nmap <Leader>g : call MyGrep('<cword>')<CR>
 nmap <Leader>h : call MyGrepW('<cword>')<CR>
-nmap <Leader>G : call MyGrep(input("grep: "))<CR>
 
 inoremap jj <esc>
 
