@@ -193,7 +193,7 @@ nmap <F2> <C-w>z
 nmap <F4> :reg<CR>
 
 "Vugitive blame
-nmap <expr> <F7> &filetype ==# 'fugitiveblame' ? ":quit\r" : ":Gblame\r"
+nmap <expr> <F7> &filetype ==# 'fugitiveblame' ? ":quit\r" : ":Git blame\r"
 
 "TagBar
 nmap <F8> :TagbarToggle<CR>
